@@ -246,7 +246,7 @@ function changeLangMenuContentSGA() {
 
 function changeLangReserveContentSGA() {
     document.getElementById('reserve-under-dev-1').textContent = '∴ᒷ ▭ ᖋ∷ᒷ ▭ ⍊ᒷ∷॥ ▭ ϟᒍ∷∷॥ ▭ ᕊ⚍ᒣ ▭ ᒣ⍑╎ϟ ▭ i!ᖋ┤ᒷ ▭ ╎ϟ';
-    document.getElementById('reserve-under-dev-1').textContent = 'Ϟᒣ╎|:|: ▭ ⚍リ↸ᒷ∷ ▭ ↸ᒷ⍊ᒷ|:ᒍi!ᒲᒷリᒣ...';
+    document.getElementById('reserve-under-dev-2').textContent = 'Ϟᒣ╎|:|: ▭ ⚍リ↸ᒷ∷ ▭ ↸ᒷ⍊ᒷ|:ᒍi!ᒲᒷリᒣ...';
 }
 
 function changeLangAboutUsContentSGA() {
