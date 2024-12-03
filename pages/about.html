@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- Compiled bootstrap css from cdn, so that i dont need to download the compiled one -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css script -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="fluid-container">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+            <div class="container-fluid">
+                <div class="col">
+                    <a id="navbrand" class="navbar-brand" href="index.html">
+                        <img src="https://tr.rbxcdn.com/180DAY-08c28a1282aebfad2c81ce79446c893f/420/420/Hat/Webp/noFilter"
+                            loading="lazy" alt="" width="40px">
+                        ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ
+                        <!-- INTERGALACTIC RESTAURANT -->
+                    </a>
+                    <ul class="navbar-nav d-flex px-5">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <strong id="navhome">⍑ᒍᒲᒷ</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html"><strong id="navmenu">ᒲᒷリ⚍</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserve.html"><strong id="navreserve">∷ᒷϟᒷ∷⍊ᖋᒣ╎ᒍリ</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html"><strong id="navabout">ᖋᕊᒍ⚍ᒣ ▭ ⚍ϟ</strong></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Language -->
+                <ul class="navbar-nav mt-2">
+                    <li class="nav-item dropdown">
+                        <a id="navlang" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Language</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li>
+                                <a id="sga" class="dropdown-item" href="#" onclick="changeLang('sge', 'about')">STANDARD
+                                    GALACTIC
+                                    ALPHABET
+                                    <img src="https://tr.rbxcdn.com/180DAY-08c28a1282aebfad2c81ce79446c893f/420/420/Hat/Webp/noFilter"
+                                        loading="lazy" alt="" width="40px" style="align-items: end;">
+                                </a>
+                            </li>
+                            <li>
+                                <a id="eng" class="dropdown-item" href="#" onclick="changeLang('eng', 'about')">ENGLISH
+                                    ALPHABET
+                                    <img src="https://images.vexels.com/content/163966/preview/england-flag-language-icon-circle-f39acf.png"
+                                        loading="lazy" alt="eng icon" width="30px">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <button type="button" class="btn btn-warning btn-lg warning-sign mt-2" data-toggle="modal"
+                            data-target="#alertModal">!
+                        </button>
+                        <div class="modal fade" id="alertModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="alert alert-info alert-dismissible">
+                                    <strong>Ola Humans!</strong>, if thee cant und'rstand Standard Galactic Alphabet
+                                    then changeth the tongue to the English one. <br> Note : this website is not
+                                    responsive.
+                                    <a class="close link-dark text-decoration-none btn-close" data-dismiss="modal"
+                                        aria-label="close"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Language -->
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- About Us Glass Container -->
+        <div class="container">
+            <section class="py-3 py-md-5 py-xl-8 m-5 text-white bg-glass">
+
+                <!-- Content 1 -->
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                            <h2 id="about-h" class="mb-4 display-5 text-center">ᖋᕊᒍ⚍ᒣ ▭ ⚍ϟ</h2>
+                            <p id="about-content-1" class="mb-5 text-center lead fs-6 justify-content-center">
+                                ∴ᒷ|:ᔮᒍᒲᒷ ▭ ᒣᒍ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ․⎽ ▭ ∴⍑ᒷ∷ᒷ ▭ ᔮ⚍|:╎リᖋ∷॥ ▭ ᒷ̇/ᔮᒷ|:|:ᒷリᔮᒷ ▭
+                                ᒣ∷ᖋリϟᔮᒷリ↸ϟ ▭ ᒣ⍑ᒷ ▭ ᕊᒍ⚍リ↸ᖋ∷╎ᒷϟ ▭ ᒍ⎓ ▭ ϟi!ᖋᔮᒷ ▭ ᖋリ↸ ▭ ᒣ╎ᒲᒷ․■․ ▭ ⎓ᒍ∷ ▭ ᒍ⍊ᒷ∷ ▭ ᖋ ▭
+                                ᒲ╎|:|:ᒷリリ╎⚍ᒲ․⎽ ▭ ∴ᒷ ▭ ⍑ᖋ⍊ᒷ ▭ ᕊᒷᒷリ ▭ ᒣ⍑ᒷ ▭ i!∷ᒷᒲ╎ᒷ∷ ▭ ↸╎リ╎リ┤ ▭ ↸ᒷϟᒣ╎リᖋᒣ╎ᒍリ ▭ ⎓ᒍ∷ ▭ ᕊᒷ╎リ┤ϟ
+                                ▭ ⎓∷ᒍᒲ ▭ ᖋ|:|: ▭ ᔮᒍ∷リᒷ∷ϟ ▭ ᒍ⎓ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ. ▭ ᒍ⚍∷ ▭ ᒲ╎ϟϟ╎ᒍリ ▭ ╎ϟ ▭ ϟ╎ᒲi!|:ᒷ⁚ニ⁚ ▭ ᒣᒍ
+                                ▭ ᕊ∷╎リ┤ ▭ ᒣᒍ┤ᒷᒣ⍑ᒷ∷ ▭ ↸╎⍊ᒷ∷ϟᒷ ▭ ⎓|:ᖋ⍊ᒍ∷ϟ ▭ ᖋリ↸ ▭ ᔮ⚍|:ᒣ⚍∷ᒷϟ․⎽ ▭ ᔮ∷ᒷᖋᒣ╎リ┤ ▭ ᖋ ▭ ⍑ᖋ∷ᒲᒍリ╎ᒍ⚍ϟ
+                                ▭ ϟ॥ᒲi!⍑ᒍリ॥ ▭ ᒍ⎓ ▭ ᒣᖋϟᒣᒷ ▭ ᒣ⍑ᖋᒣ ▭ ↸ᒷ|:╎┤⍑ᒣϟ ▭ ᒷ⍊ᒷ∷॥ ▭ i!ᖋ|:ᖋᒣᒷ.
+                                <br><br>
+                                ᒍ⚍∷ ▭ ϟᒣᒍ∷॥ ▭ ⎓ᒍ⚍リ↸ᒷ↸ ▭ ╎リ ▭ ᒣ⍑ᒷ ▭ ॥ᒷᖋ∷ ▭ ﬧ⩇⌏ᒅ ▭ ᕊ॥ ▭ ᔮ⍑ᒷ⎓ ▭ ∩ᒍ┤․⎽ ▭ ᖋ ▭ ⍊╎ϟ╎ᒍリᖋ∷॥ ▭
+                                ⎓∷ᒍᒲ ▭ ᒣ⍑ᒷ ▭ ᖋリ↸∷ᒍᒲᒷ↸ᖋ ▭ ┤ᖋ|:ᖋ̇/॥․⎽ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ ▭ ⍑ᖋϟ ▭ ┤∷ᒍ∴リ ▭ ⎓∷ᒍᒲ ▭
+                                ᖋ ▭ ⍑⚍ᒲᕊ|:ᒷ ▭ ϟi!ᖋᔮᒷ ▭ ↸╎リᒷ∷ ▭ ᒣᒍ ▭ ᖋ ▭ ∷ᒷリᒍ∴リᒷ↸ ▭ ┤ᖋϟᒣ∷ᒍリᒍᒲ╎ᔮ ▭ ⍑ᖋ⍊ᒷリ. ▭ ᔮ⍑ᒷ⎓ ▭ ∩ᒍ┤‾ϟ ▭
+                                i!ᖋϟϟ╎ᒍリ ▭ ⎓ᒍ∷ ▭ ᕊ|:ᒷリ↸╎リ┤ ▭ ᒣ∷ᖋ↸╎ᒣ╎ᒍリᖋ|: ▭ ∷ᒷᔮ╎i!ᒷϟ ▭ ∴╎ᒣ⍑ ▭ ╎リリᒍ⍊ᖋᒣ╎⍊ᒷ ▭ ᒣᒷᔮ⍑リ╎ᑑ⚍ᒷϟ ▭
+                                ⍑ᖋϟ ▭ ᒷᖋ∷リᒷ↸ ▭ ⚍ϟ ▭ ᖋ ▭ ϟᒣᒷ|:|:ᖋ∷ ▭ ∷ᒷi!⚍ᒣᖋᒣ╎ᒍリ ▭ ᖋᔮ∷ᒍϟϟ ▭ ┤ᖋ|:ᖋ̇/╎ᒷϟ.
+                                <br><br>
+                                ᒍ⚍∷ ▭ ᔮ⚍╎ϟ╎リᒷ ▭ ᖋᒣ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ․⎽ ▭ ∴ᒷ ▭ i!∷╎↸ᒷ ▭ ᒍ⚍∷ϟᒷ|:⍊ᒷϟ ▭ ᒍリ ▭
+                                ᒍ⎓⎓ᒷ∷╎リ┤ ▭ ᖋ ▭ ᒲᒷリ⚍ ▭ ᒣ⍑ᖋᒣ ▭ ╎ϟ ▭ ᖋϟ ▭ ↸╎⍊ᒷ∷ϟᒷ ▭ ᖋϟ ▭ ᒣ⍑ᒷ ▭ ᔮᒍϟᒲᒍϟ ▭ ╎ᒣϟᒷ|:⎓. ▭ ⎓∷ᒍᒲ ▭
+                                ᒣ⍑ᒷ ▭ ⎓╎ᒷ∷॥ ▭ ϟi!╎ᔮᒷϟ ▭ ᒍ⎓ ▭ ᒲᖋ∷ϟ ▭ ᒣᒍ ▭ ᒣ⍑ᒷ ▭ ↸ᒷ|:╎ᔮᖋᒣᒷ ▭ ⎓|:ᖋ⍊ᒍ∷ϟ ▭ ᒍ⎓ ▭ ⍊ᒷリ⚍ϟ╎ᖋリ ▭
+                                ⎓|:ᒍ∷ᖋ․⎽ ▭ ᒍ⚍∷ ▭ ↸╎ϟ⍑ᒷϟ ▭ ᖋ∷ᒷ ▭ ᔮ∷ᖋ⎓ᒣᒷ↸ ▭ ∴╎ᒣ⍑ ▭ ᒣ⍑ᒷ ▭ ⎓╎リᒷϟᒣ ▭ ╎リ┤∷ᒷ↸╎ᒷリᒣϟ ▭ ϟᒍ⚍∷ᔮᒷ↸ ▭
+                                ⎓∷ᒍᒲ ▭ ᖋᔮ∷ᒍϟϟ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ. ▭ ∴⍑ᒷᒣ⍑ᒷ∷ ▭ ॥ᒍ⚍‾∷ᒷ ▭ ᔮ∷ᖋ⍊╎リ┤ ▭ ᖋ ▭ ᔮ|:ᖋϟϟ╎ᔮ ▭ ᒷᖋ∷ᒣ⍑ ▭
+                                ᕊ⚍∷┤ᒷ∷ ▭ ᒍ∷ ▭ ᖋリ ▭ ᒷ̇/ᒍᒣ╎ᔮ ▭ リᒷᕊ⚍|:ᖋ ▭ ϟᖋ|:ᖋ↸․⎽ ▭ ᒍ⚍∷ ▭ ᔮ⍑ᒷ⎓ϟ ▭ ᖋ∷ᒷ ▭ ↸ᒷ↸╎ᔮᖋᒣᒷ↸ ▭ ᒣᒍ ▭
+                                ↸ᒷ|:╎⍊ᒷ∷╎リ┤ ▭ ᖋリ ▭ ⚍リ⎓ᒍ∷┤ᒷᒣᒣᖋᕊ|:ᒷ ▭ ↸╎リ╎リ┤ ▭ ᒷ̇/i!ᒷ∷╎ᒷリᔮᒷ.
+                                <br><br>
+                                ᒍ⚍∷ ▭ ᖋᒲᕊ╎ᖋリᔮᒷ ▭ ϟᒣᒷi! ▭ ╎リᒣᒍ ▭ ᒍ⚍∷ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ ▭ ᖋリ↸ ▭ ᕊᒷ ▭ ᒣ∷ᖋリϟi!ᒍ∷ᒣᒷ↸ ▭ ᒣᒍ ▭ ᖋ ▭
+                                ∴ᒍ∷|:↸ ▭ ∴⍑ᒷ∷ᒷ ▭ ᒣ⍑ᒷ ▭ ϟᒣᖋ∷ϟ ▭ ᖋ∷ᒷ ▭ ॥ᒍ⚍∷ ▭ ᔮᒍᒲi!ᖋリ╎ᒍリϟ ▭ ᖋリ↸ ▭ ᒣ⍑ᒷ ▭ i!|:ᖋリᒷᒣϟ ▭ ॥ᒍ⚍∷ ▭
+                                ᕊᖋᔮ·ǀ·↸∷ᒍi!. ▭ ᒍ⚍∷ ▭ ϟᒣᖋᒣᒷーᒍ⎓ーᒣ⍑ᒷーᖋ∷ᒣ ▭ ⍑ᒍ|:ᒍ┤∷ᖋi!⍑╎ᔮ ▭ ↸╎リ╎リ┤ ▭ ∷ᒍᒍᒲϟ ▭ ᒍ⎓⎓ᒷ∷ ▭
+                                ᕊ∷ᒷᖋᒣ⍑ᒣᖋ·ǀ·╎リ┤ ▭ ⍊╎ᒷ∴ϟ ▭ ᒍ⎓ ▭ ↸╎ϟᒣᖋリᒣ ▭ ┤ᖋ|:ᖋ̇/╎ᒷϟ․⎽ ▭ ᔮ∷ᒷᖋᒣ╎リ┤ ▭ ᖋリ ▭ ╎ᒲᒲᒷ∷ϟ╎⍊ᒷ ▭
+                                ᖋᒣᒲᒍϟi!⍑ᒷ∷ᒷ ▭ ᒣ⍑ᖋᒣ ▭ ᒷリ⍑ᖋリᔮᒷϟ ▭ ॥ᒍ⚍∷ ▭ ᔮ⚍|:╎リᖋ∷॥ ▭ ⋮ᒍ⚍∷リᒷ॥.
+                                <br><br>
+                                ᒍ⚍∷ ▭ ᔮᒍᒲᒲ╎ᒣᒲᒷリᒣ ▭ ∴ᒷ ▭ ᖋ∷ᒷ ▭ ᔮᒍᒲᒲ╎ᒣᒣᒷ↸ ▭ ᒣᒍ ▭ ϟ⚍ϟᒣᖋ╎リᖋᕊ╎|:╎ᒣ॥ ▭ ᖋリ↸ ▭ ᒷᒣ⍑╎ᔮᖋ|: ▭
+                                ϟᒍ⚍∷ᔮ╎リ┤․⎽ ▭ ᒷリϟ⚍∷╎リ┤ ▭ ᒣ⍑ᖋᒣ ▭ ᒷ⍊ᒷ∷॥ ▭ ╎リ┤∷ᒷ↸╎ᒷリᒣ ▭ ∴ᒷ ▭ ⚍ϟᒷ ▭ ╎ϟ ▭ ⍑ᖋ∷⍊ᒷϟᒣᒷ↸ ▭ ∴╎ᒣ⍑ ▭
+                                ∷ᒷϟi!ᒷᔮᒣ ▭ ⎓ᒍ∷ ▭ ᒣ⍑ᒷ ▭ ᒷリ⍊╎∷ᒍリᒲᒷリᒣ ▭ ᖋリ↸ ▭ ᒣ⍑ᒷ ▭ ᕊᒷ╎リ┤ϟ ▭ ∴⍑ᒍ ▭ ╎リ⍑ᖋᕊ╎ᒣ ▭ ╎ᒣ. ▭ ᒍ⚍∷ ▭
+                                ∩ᒷ∷ᒍー┤∷ᖋ⍊╎ᒣ॥ ▭ ┤ᖋ∷↸ᒷリϟ ▭ ᖋリ↸ ▭ ⍑॥↸∷ᒍi!ᒍリ╎ᔮ ▭ ⎓ᖋ∷ᒲϟ ▭ ᖋ|:|:ᒍ∴ ▭ ⚍ϟ ▭ ᒣᒍ ▭ ┤∷ᒍ∴ ▭ ⎓∷ᒷϟ⍑ ▭
+                                i!∷ᒍ↸⚍ᔮᒷ ▭ ॥ᒷᖋ∷ー∷ᒍ⚍リ↸․⎽ ▭ ∷ᒷ↸⚍ᔮ╎リ┤ ▭ ᒍ⚍∷ ▭ ᔮᖋ∷ᕊᒍリ ▭ ⎓ᒍᒍᒣi!∷╎リᒣ ▭ ᖋリ↸ ▭ ϟ⚍i!i!ᒍ∷ᒣ╎リ┤ ▭
+                                |:ᒍᔮᖋ|: ▭ ᒷᔮᒍϟ॥ϟᒣᒷᒲϟ.
+                                <br><br>
+                            </p>
+                            <img class=""
+                                src="https://tr.rbxcdn.com/180DAY-08c28a1282aebfad2c81ce79446c893f/420/420/Hat/Webp/noFilter"
+                                loading="lazy" alt="" width="100px">
+                            <hr class="w-100 mx-auto mb-5 mb-xl-9 border-white">
+                        </div>
+                    </div>
+                </div>
+                <!-- Content 1 -->
+
+                <!-- Content 2 -->
+                <div class="container">
+                    <div class="row gy-4 gy-lg-0 align-items-lg-center">
+                        <div class="col-12 col-lg-6">
+                            <img class="img-fluid rounded border border-dark" loading="lazy"
+                                src="https://images.nightcafe.studio/jobs/xqgSPCJj6TBWO139P7oH/xqgSPCJj6TBWO139P7oH--1--ah88w.jpg?tr=w-1600,c-at_max"
+                                alt="About Us">
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-6">
+                            <div class="row justify-content-lg-end">
+                                <div class="col-12 col-lg-11">
+                                    <div class="about-wrapper">
+                                        <p id="about-content-2" class="lead mb-4 mb-md-5">
+                                            ⋮ᒍ╎リ ▭ ⚍ϟ ▭ ∴⍑ᒷᒣ⍑ᒷ∷ ▭ ॥ᒍ⚍‾∷ᒷ ▭ ᖋ ▭ ϟᒷᖋϟᒍリᒷ↸ ▭ ϟi!ᖋᔮᒷ ▭ ᒣ∷ᖋ⍊ᒷ|:ᒷ∷ ▭ ᒍ∷ ▭ ᖋ ▭
+                                            ᔮ⚍∷╎ᒍ⚍ϟ ▭ ᒷᖋ∷ᒣ⍑|:╎リ┤․⎽ ▭ ∴ᒷ ▭ ╎リ⍊╎ᒣᒷ ▭ ॥ᒍ⚍ ▭ ᒣᒍ ▭ ᒷᒲᕊᖋ∷·ǀ· ▭ ᒍリ ▭ ᖋ ▭
+                                            ᔮ⚍|:╎リᖋ∷॥ ▭ ᖋ↸⍊ᒷリᒣ⚍∷ᒷ ▭ |:╎·ǀ·ᒷ ▭ リᒍ ▭ ᒍᒣ⍑ᒷ∷. ▭ ᖋᒣ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭
+                                            ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ․⎽ ▭ ᒷ⍊ᒷ∷॥ ▭ ᒲᒷᖋ|: ▭ ╎ϟ ▭ ᖋ ▭ ᔮᒷ|:ᒷᕊ∷ᖋᒣ╎ᒍリ ▭ ᒍ⎓ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ‾ϟ
+                                            ▭ ∷╎ᔮ⍑ ▭ ᒣᖋi!ᒷϟᒣ∷॥ ▭ ᒍ⎓ ▭ ⎓|:ᖋ⍊ᒍ∷ϟ. ▭ ᔮᒍᒲᒷ ▭ ↸╎リᒷ ▭ ∴╎ᒣ⍑ ▭ ⚍ϟ ▭ ᖋリ↸ ▭
+                                            ↸╎ϟᔮᒍ⍊ᒷ∷ ▭ ∴⍑॥ ▭ ∴ᒷ ▭ ⍑ᖋ⍊ᒷ ▭ ᕊᒷᒷリ ▭ ᒣ⍑ᒷ ▭ ┤ᖋ|:ᖋ̇/॥‾ϟ ▭ ⎓ᖋ⍊ᒍ∷╎ᒣᒷ ▭ ↸╎リ╎リ┤ ▭
+                                            ↸ᒷϟᒣ╎リᖋᒣ╎ᒍリ ▭ ⎓ᒍ∷ ▭ ᒍ⍊ᒷ∷ ▭ ᖋ ▭ ᒣ⍑ᒍ⚍ϟᖋリ↸ ▭ ॥ᒷᖋ∷ϟ.
+                                            <br><br>
+                                            ᕊᒍリ ▭ ᖋi!i!éᒣ╎ᒣ․⎽ ▭ ᖋリ↸ ▭ ᒲᖋ॥ ▭ ᒣ⍑ᒷ ▭ ϟᒣᖋ∷ϟ ▭ ┤⚍╎↸ᒷ ▭ ॥ᒍ⚍∷ ▭ ᒣᖋϟᒣᒷ ▭ ᕊ⚍↸ϟ․■!
+                                        </p>
+                                        <div class="row gy-4 mb-4 mb-md-5">
+                                            <div class="col-12 col-md-6">
+                                                <div class="card card-border border border-dark bg-drkblue" style="width: 250px;">
+                                                    <div class="card-body text-white p-3">
+                                                        <h3 id="420M+" class="display-5 fw-bold  text-center mb-2">
+                                                            ᒅ⌏⩇ᒲ˨
+                                                        </h3>
+                                                        <p id="Qualified Experts" class="fw-bold text-center m-0">
+                                                            ᑑ⚍ᖋ|:╎⎓╎ᒷ↸ ▭ ᒷ̇/i!ᒷ∷ᒣϟ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="card card-border border border-dark bg-drkblue" style="width: 250px;">
+                                                    <div class="card-body text-white p-3">
+                                                        <h3 id="69T+" class="display-5 fw-bold  text-center mb-2">Ō⫑ᒣ˨
+                                                        </h3>
+                                                        <p id="Satisfied Clients" class="fw-bold text-center m-0">
+                                                            Ϟᖋᒣ╎ϟ⎓╎ᒷ↸ ▭ ᔮ|:╎ᒷリᒣϟ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content 2 -->
+
+            </section>
+        </div>
+        <!-- About Us Glass Container -->
+
+
+        <!-- Footer -->
+        <footer class="text-center text-white">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: Links -->
+                <section class="pt-2">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center py-4">
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a id="foothome" href="index.html" class="text-white">⍑ᒍᒲᒷ</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a id="footmenu" href="menu.html" class="text-white">ᒲᒷリ⚍</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a id="footreserve" href="reserve.html" class="text-white">∷ᒷϟᒷ∷⍊ᖋᒣ╎ᒍリ</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a id="footabout" href="about.html" class="text-white">ᖋᕊᒍ⚍ᒣ ▭ ⚍ϟ</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div id="footcr" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © ⌏⩇⌏ᒅ ▭ ᔮᒍi!॥∷╎┤⍑ᒣ⁚ニ⁚ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <!-- <img alt="A lazy image" class="lazy"  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/26/75/c4/jakarta-restaurant-presents.jpg?w=900&h=500&s=1" data-src="lazy.jpg" /> -->
+    </div>
+    <!-- Main Container -->
+
+    <!-- custom js script -->
+    <script src="../js/script.js"></script>
+
+    <!-- Compiled js from cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+
+</body>
+</html>

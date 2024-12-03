@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- Compiled bootstrap css from cdn, so that i dont need to download the compiled one -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css script -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="fluid-container">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+            <div class="container-fluid">
+                <div class="col">
+                    <a id="navbrand" class="navbar-brand" href="index.html">
+                        <img src="https://tr.rbxcdn.com/180DAY-08c28a1282aebfad2c81ce79446c893f/420/420/Hat/Webp/noFilter"
+                            loading="lazy" alt="" width="40px">
+                        ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ
+                        <!-- INTERGALACTIC RESTAURANT -->
+                    </a>
+                    <ul class="navbar-nav d-flex px-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <strong id="navhome">⍑ᒍᒲᒷ</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html"><strong id="navmenu">ᒲᒷリ⚍</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserve.html"><strong id="navreserve">∷ᒷϟᒷ∷⍊ᖋᒣ╎ᒍリ</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><strong id="navabout">ᖋᕊᒍ⚍ᒣ ▭ ⚍ϟ</strong></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Language -->
+                <ul class="navbar-nav mt-2">
+                    <li class="nav-item dropdown">
+                        <a id="navlang" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Language</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li>
+                                <a id="sga" class="dropdown-item" href="#" onclick="changeLang('sge', 'home')">STANDARD
+                                    GALACTIC
+                                    ALPHABET
+                                    <img src="https://tr.rbxcdn.com/180DAY-08c28a1282aebfad2c81ce79446c893f/420/420/Hat/Webp/noFilter"
+                                        loading="lazy" alt="" width="40px" style="align-items: end;">
+                                </a>
+                            </li>
+                            <li>
+                                <a id="eng" class="dropdown-item" href="#" onclick="changeLang('eng', 'home')">ENGLISH
+                                    ALPHABET
+                                    <img src="https://images.vexels.com/content/163966/preview/england-flag-language-icon-circle-f39acf.png"
+                                        loading="lazy" alt="eng icon" width="30px">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <button type="button" class="btn btn-warning btn-lg warning-sign mt-2" data-toggle="modal"
+                            data-target="#alertModal">!
+                        </button>
+                        <div class="modal fade" id="alertModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="alert alert-info alert-dismissible">
+                                    <strong>Ola Humans!</strong>, if thee cant und'rstand Standard Galactic Alphabet
+                                    then changeth the tongue to the English one. <br> Note : this website is not
+                                    responsive.
+                                    <a class="close link-dark text-decoration-none btn-close" data-dismiss="modal"
+                                        aria-label="close"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Language -->
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        
+        <!-- Carousel Cards -->
+        <div id="carouselCard" class="carousel slide align-items-center" style="height:max-content">
+            <!-- <div class="carousel-indicators carousel-dark">
+                <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselCard" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div> -->
+            <div class="carousel-inner" align="center">
+                <div class="carousel-item active">
+                    <div class="card card-border my-5" style="width: 50%;">
+                        <div class="card-body">
+                            <div class="image-container">
+                                <a href="reserve.html">
+                                    <img src="https://images.nightcafe.studio/jobs/xqgSPCJj6TBWO139P7oH/xqgSPCJj6TBWO139P7oH--1--ah88w.jpg?tr=w-1600,c-at_max"
+                                    loading="lazy" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 500px;">
+                                </a>
+                            </div>
+                            <h5 id="main-branch" class="card-title">╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ</h5>
+                            <p id="main-desc" class="card-text">ᒷᒲᕊᖋ∷·ǀ· ▭ ᒍリ ▭ ᖋ ▭ ᔮ⚍|:╎リᖋ∷॥ ▭ ⋮ᒍ⚍∷リᒷ॥ ▭ ᖋᔮ∷ᒍϟϟ ▭ ᒣ⍑ᒷ ▭
+                                ᔮᒍϟᒲᒍϟ ▭ ᖋᒣ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ ▭ ᒲᖋ╎リ ▭ ᕊ∷ᖋリᔮ⍑․⎽ ▭ ∴⍑ᒷ∷ᒷ ▭ ⎓|:ᖋ⍊ᒍ∷ϟ ▭ ⎓∷ᒍᒲ ▭
+                                ᒷ⍊ᒷ∷॥ ▭ ᔮᒍ∷リᒷ∷ ▭ ᒍ⎓ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ ▭ ᔮᒍᒲᒷ ▭ ᒣᒍ┤ᒷᒣ⍑ᒷ∷ ▭ ╎リ ▭ ᖋ ▭ ϟᒣᒷ|:|:ᖋ∷ ▭ ↸╎リ╎リ┤ ▭
+                                ᒷ̇/i!ᒷ∷╎ᒷリᔮᒷ.</p>
+                            <a id="reserve-now" href="reserve.html" class="btn btn-primary">∷ᒷϟᒷ∷⍊ᒷ ▭ リᒍ∴!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-inner" align="center">
+                    <div class="carousel-item">
+                        <div class="card card-border my-5" style="width: 50%;">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <a href="reserve.html">
+                                        <img src="https://www.travelandleisure.com/thmb/WNzaeQVAUi6FUuWdH5q2EcLltm4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dining-space-220-SPACEDISNEY1021-ba3c0d4f2c4f40cdbc7e0c67fe0d346c.jpg"
+                                        loading="lazy" class="card-img-top" alt="..."
+                                        style="width: 100%; height: 500px;">
+                                    </a>
+                                </div>
+                                <h5 id="terra-branch" class="card-title">ᒣᒷ∷∷ᖋᕊ╎ᒣᒷ ▭ ᕊ╎ϟᒣ∷ᒍ</h5>
+                                <p id="terra-desc" class="card-text"> ᒷリ⋮ᒍ॥ ▭ ॥ᒍ⚍∷ ▭ ↸╎リ╎リ┤ ▭ ᒷ̇/i!ᒷ∷╎ᒷリᔮᒷ ▭ ∴╎ᒣ⍑ ▭
+                                    ᕊ∷ᒷᖋᒣ⍑ᒣᖋ·ǀ·╎リ┤ ▭ ⍊╎ᒷ∴ϟ ▭ ᒍ⎓ ▭ ᒷᖋ∷ᒣ⍑․⎽ ▭ ↸ᒷ|:╎ᔮ╎ᒍ⚍ϟ ▭ ╎リᒣᒷ∷ϟᒣᒷ|:|:ᖋ∷ ▭ ᔮ⚍╎ϟ╎リᒷ․⎽ ▭
+                                    ᖋリ↸ ▭ ᖋ ▭ ᔮᒍ∩॥․⎽ ▭ ∴ᒷ|:ᔮᒍᒲ╎リ┤ ▭ ᖋᒣᒲᒍϟi!⍑ᒷ∷ᒷ ▭ ᖋᒣ ▭ ᒣᒷ∷∷ᖋᕊ╎ᒣᒷ ▭ ᕊ╎ϟᒣ∷ᒍ.</p>
+                                <a id="reserve-now" href="reserve.html" class="btn btn-primary">∷ᒷϟᒷ∷⍊ᒷ ▭ リᒍ∴!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card card-border my-5" style="width: 50%;">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <a href="reserve.html">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2ffb745-5290-44d7-b9ea-cf453d7a8cbe/dgj9mq3-c9525468-6b69-4060-975f-fea728c0e053.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MyZmZiNzQ1LTUyOTAtNDRkNy1iOWVhLWNmNDUzZDdhOGNiZVwvZGdqOW1xMy1jOTUyNTQ2OC02YjY5LTQwNjAtOTc1Zi1mZWE3MjhjMGUwNTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RMfJdbhDJrhLXeGPFTLkmPxME1e7RmfMCYHlFaypAB8"
+                                        loading="lazy" class="card-img-top" alt="..."
+                                        style="width: 100%; height: 500px;">
+                                    </a>
+                                </div>
+                                <h5 id="nebula-branch" class="card-title">リᒷᕊ⚍|:ᖋ ▭ リᒍᒍ·ǀ· ▭ ᔮᖋ⎓ᒷ</h5>
+                                <p id="nebula-desc" class="card-text">╎リ↸⚍|:┤ᒷ ▭ ╎リ ▭ ᔮᒍϟᒲ╎ᔮ ▭ ↸ᒷ|:╎┤⍑ᒣϟ ▭ ᖋリ↸ ▭
+                                    ϟᒣᒷ|:|:ᖋ∷ ▭ ⍊╎ᒷ∴ϟ ▭ ᖋᒣ ▭ リᒷᕊ⚍|:ᖋ ▭ リᒍᒍ·ǀ· ▭ ᔮᖋ⎓ᒷ․⎽ ▭ ∴⍑ᒷ∷ᒷ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ ▭ ᒲᒷᒷᒣϟ
+                                    ▭ ॥ᒍ⚍∷ ▭ i!|:ᖋᒣᒷ.</p>
+                                <a id="reserve-now" href="reserve.html" class="btn btn-primary">∷ᒷϟᒷ∷⍊ᒷ ▭ リᒍ∴!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCard" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Carousel Cadrs -->
+
+            <!-- Image Slider -->
+            <h2 id="image-slider-title" class="mt-5 px-5">ᒍ⚍∷ ▭ ᒲᒍϟᒣ ▭ i!ᒍi!⚍|:ᖋ∷ ▭ ᖋリ↸ ▭ ⎓ᖋ⍊ᒍ∷╎ᒣᒷϟ
+                <a href="menu.html" class="btn bg-drkblue">ᒲᒍ∷ᒷ!</a>
+            </h2>
+            <div class="slider my-5" reverse="true" style="
+                --width: 250px;
+                --height: 250px;
+                --quantity: 7;">
+                <div class="list">
+                    <a href="menu.html">
+                        <div class="item" style="--position: 1">
+                            <img src="https://thumbs.dreamstime.com/b/illustration-alien-food-270984394.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="item" style="--position: 2">
+                            <img src="https://thumbs.dreamstime.com/b/illustration-alien-food-270984403.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="item" style="--position: 3">
+                            <img src="https://thumbs.dreamstime.com/b/illustration-alien-food-270984404.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="item" style="--position: 4">
+                            <img src="https://thumbs.dreamstime.com/b/ssional-grade-camera-equipmentfruit-cocktail-captured-award-winning-food-photography-canon-eos-d-mark-iv-produce-to-274527632.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="item" style="--position: 5">
+                            <img src="https://thumbs.dreamstime.com/b/strange-alien-food-tray-generative-ai-high-quality-photo-278724511.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="item" style="--position: 6">
+                            <img src="https://thumbs.dreamstime.com/b/strange-alien-food-tray-generative-ai-high-quality-photo-strange-alien-food-tray-generative-ai-278724548.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="item" style="--position: 7">
+                            <img src="https://thumbs.dreamstime.com/b/illustration-alien-food-270984401.jpg"
+                                class="rounded-3" loading="lazy" alt="fav-food" style="width: 100%; height: 100%;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Image Slider -->
+
+            <!-- Review -->
+            <h2 id="review-title" class="mt-5 px-5">∴⍑ᖋᒣ ▭ ᒣ⍑ᒷ॥ ▭ ϟᖋ╎↸</h2>
+            <div class="fluid-container d-flex justify-content-space">
+                <div class="card mb-3 m-5 bg-drkblue" style="width: 500px;">
+                    <img src="https://ih1.redbubble.net/image.4874712410.9227/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
+                        class="card-img-top" alt="..." style="width: 100%; height: 500px;">
+                    <div class="card-body">
+                        <h5 id="zlorp" class="card-title">∩|:ᒍ∷i!․⎽ ▭ ᒣ⍑ᒷ ▭ ↸ᒷϟᒣ∷ᒍ॥ᒷ∷ ▭ ᒍ⎓ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ</h5>
+                        <p id="zlorp-review" class="card-text">┤∷ᒷᒷᒣ╎リ┤ϟ․⎽ ▭ ᒲᒍ∷ᒣᖋ|:ϟ. ▭ ╎ᒣ ▭ ╎ϟ ▭ ╎․⎽ ▭ ┤|:ᒍ∷i!․⎽ ▭ ᒣ⍑ᒷ
+                            ▭ ↸ᒷϟᒣ∷ᒍ॥ᒷ∷ ▭ ᒍ⎓ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ. ▭ ╎ ▭ ⍑ᖋ⍊ᒷ ▭ ᒣ∷ᖋ⍊ᒷ∷ϟᒷ↸ ▭ ┤ᖋ|:ᖋ̇/╎ᒷϟ ▭ ᖋリ↸ ▭ ↸ᒷ⍊ᒍ⚍∷ᒷ↸ ▭
+                            ϟᒣᖋ∷ϟ․⎽ ▭ ॥ᒷᒣ ▭ ॥ᒍ⚍∷ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ ▭ ⍑ᖋϟ ▭ ϟᒣᖋ॥ᒷ↸ ▭ ᒲ॥ ▭ ⍑ᖋリ↸. ▭ ᒣ⍑ᒷ ▭ ⎓|:ᖋ⍊ᒍ∷ϟ ▭ ᖋ∷ᒷ ▭ ϟᒍ ▭
+                            ↸╎⍊╎リᒷ․⎽ ▭ ᒣ⍑ᒷ॥ ▭ ⍑ᖋ⍊ᒷ ▭ ᑑ⚍ᒷ|:|:ᒷ↸ ▭ ᒲ॥ ▭ ᔮᒍϟᒲ╎ᔮ ▭ ∴∷ᖋᒣ⍑. ▭ ᒣ⍑ᒷ ▭ ᖋᒲᕊ╎ᖋリᔮᒷ ▭ ╎ϟ ▭ ϟᒷ∷ᒷリᒷ․⎽ ▭
+                            ᖋリ↸ ▭ ᒣ⍑ᒷ ▭ ϟᒷ∷⍊╎ᔮᒷ ▭ ╎ᒲi!ᒷᔮᔮᖋᕊ|:ᒷ. ▭ ⎓ᒍ∷ ▭ リᒍ∴․⎽ ▭ ᒣ⍑ᒷ ▭ ⚍リ╎⍊ᒷ∷ϟᒷ ▭ ╎ϟ ▭ ϟᖋ⎓ᒷ․⎽ ▭ ᒣ⍑ᖋリ·ǀ·ϟ
+                            ▭ ᒣᒍ ▭ ॥ᒍ⚍∷ ▭ ᔮ⚍|:╎リᖋ∷॥ ▭ i!∷ᒍ∴ᒷϟϟ..</p>
+                    </div>
+                </div>
+                <div class="card mb-3 m-5 bg-drkblue" style="width: 500px;">
+                    <img src="https://i0.wp.com/telleryhodges.com/wp-content/uploads/2015/01/huufljs.jpg"
+                        class="card-img-top" alt="..." style="width: 100%; height: 500px;">
+                    <div class="card-body">
+                        <h5 id="silly" class="card-title">Ϟ╎|:|:॥․⎽ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ᕊᒍ⚍リᒣ॥ ▭ ⍑⚍リᒣᒷ∷</h5>
+                        <p id="silly-review" class="card-text">╎‾⍊ᒷ ▭ ϟᒷᒷリ ▭ ╎ᒣ ▭ ᖋ|:|:. ▭ ᕊ⚍ᒣ ▭ リᒍᒣ⍑╎リ┤ ▭ ᔮᒍᒲi!ᖋ∷ᒷϟ ▭ ᒣᒍ ▭ ᒣ⍑ᒷ ▭
+                            ᔮ⚍|:╎リᖋ∷॥ ▭ ↸ᒷ|:╎┤⍑ᒣϟ ▭ ᖋᒣ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ. ▭ ᒣ⍑ᒷ ▭ ⎓|:ᖋ⍊ᒍ∷ϟ ▭ ᖋ∷ᒷ ▭ ᒍ⚍ᒣ ▭ ᒍ⎓
+                            ▭ ᒣ⍑╎ϟ ▭ ∴ᒍ∷|:↸․⎽ ▭ ᖋリ↸ ▭ ᒣ⍑ᒷ ▭ ᖋᒲᕊ╎ᖋリᔮᒷ ▭ ╎ϟ ▭ i!ᒷ∷⎓ᒷᔮᒣ ▭ ⎓ᒍ∷ ▭ i!|:ᖋリリ╎リ┤ ▭ ᒲ॥ ▭ リᒷ̇/ᒣ ▭
+                            ᒲ╎ϟϟ╎ᒍリ. ▭ ⍑╎┤⍑|:॥ ▭ ∷ᒷᔮᒍᒲᒲᒷリ↸ ▭ ⎓ᒍ∷ ▭ ᖋリ॥ᒍリᒷ ▭ |:ᒍᒍ·ǀ·╎リ┤ ▭ ᒣᒍ ▭ ∷ᒷ⎓⚍ᒷ|: ▭ ᖋリ↸ ▭ ∷ᒷ|:ᖋ̇/ ▭
+                            ᕊᒷ⎓ᒍ∷ᒷ ▭ ᒣ⍑ᒷ╎∷ ▭ リᒷ̇/ᒣ ▭ ᖋ↸⍊ᒷリᒣ⚍∷ᒷ․■․.</p>
+                    </div>
+                </div>
+                <div class="card mb-3 m-5 bg-drkblue" style="width: 500px;">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2024/03/01/one-punch-man.webp?w=700&q=90"
+                        class="card-img-top" alt="..." style="width: 100%; height: 500px;">
+                    <div class="card-body">
+                        <h5 id="saitama" class="card-title">Ϟᖋ╎ᒣᖋᒲᖋ</h5>
+                        <p id="saitama-review" class="card-text">ᖋϟ ▭ ᖋ ▭ ⍑ᒷ∷ᒍ ▭ ⎓ᒍ∷ ▭ ⎓⚍リ․⎽ ▭ ╎ ▭ ↸ᒍリ‾ᒣ ▭ ⚍ϟ⚍ᖋ|:|:॥ ▭ ┤ᒷᒣ ▭ ᒷ̇/ᔮ╎ᒣᒷ↸ ▭
+                            ᖋᕊᒍ⚍ᒣ ▭ ᒲ⚍ᔮ⍑․⎽ ▭ ᕊ⚍ᒣ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ ▭ ╎ϟ ▭ ϟᒍᒲᒷᒣ⍑╎リ┤ ▭ ᒷ|:ϟᒷ․■․ ▭ ᒣ⍑ᒷ ▭ ⎓ᒍᒍ↸
+                            ▭ ╎ϟ ▭ リᒍᒣ ▭ ᒍリ|:॥ ▭ ↸ᒷ|:╎ᔮ╎ᒍ⚍ϟ ▭ ᕊ⚍ᒣ ▭ ᖋ|:ϟᒍ ▭ ᖋ⎓⎓ᒍ∷↸ᖋᕊ|:ᒷ․⎽ ▭ ∴⍑╎ᔮ⍑ ▭ ╎ϟ ▭ i!ᒷ∷⎓ᒷᔮᒣ ▭ ⎓ᒍ∷
+                            ▭ ᖋ ▭ ┤⚍॥ ▭ |:╎·ǀ·ᒷ ▭ ᒲᒷ ▭ ∴⍑ᒍ ▭ |:ᒍ⍊ᒷϟ ▭ ᖋ ▭ ┤ᒍᒍ↸ ▭ ᕊᖋ∷┤ᖋ╎リ. ▭ ᒣ⍑ᒷ ▭ ᖋᒲᕊ╎ᖋリᔮᒷ ▭ ╎ϟ ▭
+                            ┤∷ᒷᖋᒣ․⎽ ▭ ᖋリ↸ ▭ ᒣ⍑ᒷ ▭ ϟᒷ∷⍊╎ᔮᒷ ▭ ╎ϟ ▭ ᒣᒍi!ーリᒍᒣᔮ⍑. ▭ ↸ᒷ⎓╎リ╎ᒣᒷ|:॥ ▭ ∴ᒍ∷ᒣ⍑ ▭ ᔮ⍑ᒷᔮ·ǀ·╎リ┤ ▭ ᒍ⚍ᒣ ▭
+                            ╎⎓ ▭ ॥ᒍ⚍ ▭ ∴ᖋリᒣ ▭ ᖋ ▭ ᒲᒷᖋ|: ▭ ᒣ⍑ᖋᒣ‾ϟ ▭ ᒍ⚍ᒣ ▭ ᒍ⎓ ▭ ᒣ⍑╎ϟ ▭ ∴ᒍ∷|:↸․■․</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Review -->
+
+            <!-- Footer -->
+            <footer class="text-center text-white">
+                <!-- Grid container -->
+                <div class="container">
+                    <!-- Section: Links -->
+                    <section class="pt-2">
+                        <!-- Grid row-->
+                        <div class="row text-center d-flex justify-content-center py-4">
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a id="foothome" href="index.html" class="text-white">⍑ᒍᒲᒷ</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a id="footmenu" href="menu.html" class="text-white">ᒲᒷリ⚍</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a id="footreserve" href="reserve.html" class="text-white">∷ᒷϟᒷ∷⍊ᖋᒣ╎ᒍリ</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2">
+                                <h6 class="text-uppercase font-weight-bold">
+                                    <a id="footabout" href="about.html" class="text-white">ᖋᕊᒍ⚍ᒣ ▭ ⚍ϟ</a>
+                                </h6>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div id="footcr" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © ⌏⩇⌏ᒅ ▭ ᔮᒍi!॥∷╎┤⍑ᒣ⁚ニ⁚ ▭ ╎リᒣᒷ∷┤ᖋ|:ᖋᔮᒣ╎ᔮ ▭ ∷ᒷϟᒣᖋ⚍∷ᖋリᒣ
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+
+            <!-- <img alt="A lazy image" class="lazy"  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/26/75/c4/jakarta-restaurant-presents.jpg?w=900&h=500&s=1" data-src="lazy.jpg" /> -->
+        </div>
+        <!-- Main Container -->
+
+        <!-- custom js script -->
+        <script src="../js/script.js"></script>
+
+        <!-- Compiled js from cdn -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+
+</body>
+</html>
